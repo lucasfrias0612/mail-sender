@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sitio Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/send-email" method="POST">
+                            <h6 class="h6">Datos del Servidor</h6>
+                            <div class="form-group">
+                                <input type="text" name="host" class="form-control" placeholder="Servidor SMTP"
+                                    autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="smptPort" class="form-control"
+                                    placeholder="Puerto del Servidor SMTP" autofocus>
+                            </div>
+
+                            <h6 class="h6">Datos del Usuario</h6>
+                            <div class="form-group">
+                                <input type="text" name="smptUser" placeholder="Usuario SMTP" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Constraseña de Usuario SMTP"
+                                    class="form-control">
+                            </div>
+
+                            <h6 class="h6">Mensaje</h6>
+                            <div class="form-group">
+                                <input type="text" name="fromName" placeholder="Nombre del Remitente" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="reciever" placeholder="Correo del Destinatario" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Asunto" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="message" placeholder="Message" class="form-control">
+                            </div>
+
+                            <button class="btn btn-primary btn-block">
+                                Send
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
